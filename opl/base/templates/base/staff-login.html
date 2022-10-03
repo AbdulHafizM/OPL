@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="nav-menu">
+        <ul>
+            <li class="logo">logo</li>
+            <li class="toggle_icon"><i class="fa fa-bars"></i></>
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="/#about">About</a></li>
+            <li class="nav-link"><a href="{% url 'services' %}">Services</a></li>
+            <li class="nav-link"><a href="/#news">Calendar & Blog</a></li>
+            <li class="nav-link"><a href="/#contact">Contact</a></li>
+            <li class="nav-link"><a href="{% url 'login' %}">Staff/Executive</a></li>
+        </ul>
+    </div>
+    <div class="pos_align_form">
+        <p>{{error}}</p>
+        <form method="POST" action="" class="form">
+            {% csrf_token %}
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Enter username..." required/> 
+            <label>Password: </label>
+            <input type="password" name="password" placeholder="Enter password.." required/>
+            <button type="submit" value="login">Login</button>
+        </form>
+    </div>
+
+    <script src="{% static 'js/toggle.js' %}">
+    </script>
+</body>
+</html>

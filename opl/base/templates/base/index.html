@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptimalLead</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <span class="top-contact-info">
+            <span>
+                <i class="fa fa-envelope"></i>
+                <span>info@school.com</span>
+                <i class="fa fa-phone"></i>
+                <span>+2348125244433</span>
+                <span>+2348125244433</span>
+            </span>
+            <span>
+                Mon-Fri 8am - 4pm
+            </span>
+        </span>
+        <div id="nav-menu">
+                <ul>
+                    <li class="logo">logo</li>
+                    <li class="toggle_icon"><i class="fa fa-bars"></i></>
+                    <li class="nav-link"><a href="/">Home</a></li>
+                    <li class="nav-link"><a href="/#about">About</a></li>
+                    <li class="nav-link"><a href="{% url 'services' %}">Services</a></li>
+                    <li class="nav-link"><a href="/#news">Calendar & Blog</a></li>
+                    <li class="nav-link"><a href="/#contact">Contact</a></li>
+                    <li class="nav-link"><a href="{% url 'login' %}">Staff/Executive</a></li>
+                </ul>
+        </div>
+        <!-- image swiper-->
+        <!-- Additional required wrapper -->
+    
+       <div class="swiper">
+            
+            <div class="swiper-wrapper">
+    
+              <div class="swiper-slide" data-swiper-autoplay="3000">
+                <img src="https://media.istockphoto.com/photos/multiethnic-group-of-students-studying-outdoors-picture-id818087910?k=20&m=818087910&s=612x612&w=0&h=yFTDSCem-fhKsjWl_6Uiej2lol3XaBZrYqm_di8kRaM="/>
+                <div class="overlay-text animation-1">
+                    <div class="cover">
+                        <h1>OPTIMAL LEAD SCHOOLS</h1>
+                        <p>Lorem, ipsum dolor.</p>
+                        <button class="btn-container"><a href="{% url 'admission' %}">Enroll Now</a></div>
+                    </div>
+                </div>
+             </div>
+              <div class="swiper-slide" data-swiper-autoplay="3000">
+                <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3R1ZGVudHxlbnwwfHwwfHw%3D&w=1000&q=80"/>
+                <div class="overlay-text animation-2">
+                    <div>
+                        <h1>One mission, one vision</h1>
+                        <p>Impacting knowledge.</p>
+                        <button class="btn-container"><a href="{% url 'admission' %}">Enroll Now</a></>
+                    </div>
+                </div>
+             </div>
+             <div class="swiper-slide" data-swiper-autoplay="3000">
+                <img src="https://thumbs.dreamstime.com/z/group-little-students-over-white-background-42963134.jpg"/>
+                <div class="overlay-text animation-3">
+                    <div class="cover">
+                        <h1>Driving towards excellence</h1>
+                        <p>Lorem, ipsum dolor.</p>
+                        <button class="btn-container"><a href="{% url 'admission' %}">Enroll Now</a></>
+                    </div>
+                </div>
+             </div>
+
+             </div>
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+          <section id="about" data-aos="fade-left"">
+            <h2>About Us</h2>
+            <div class="about-container">
+                <div>logo</div>
+                <div><h2>Welcome</h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis optio minima, quo reiciendis saepe aut voluptatum quas accusantium dolorum a similique placeat dolore id nostrum quidem inventore, voluptas dolorem ullam adipisci animi. Delectus quis nisi quasi expedita earum? Tempore sunt, odio aliquid voluptatum doloremque deserunt at hic? Odit exercitationem nobis nam rerum, illo non, nisi libero distinctio sapiente, minima sequi iure maiores ut tempora eos.</div>
+            </div>
+          </section>
+          <section id="services" class="services">
+            <h2>What we offer</h2>
+            <div class="services-container">
+                <div data-aos="zoom-in">
+                    <h4>Computer Science</h4>
+                    <p>If you think that solving mathematical problems, mainly discrete mathematics, studying programming and programming languages, solving (real life) problems with systematic logical approaches and design and analyzing these solutions and programs is fun, so studying computer science will be fun.</p>
+                </div>
+                <div data-aos="zoom-in">
+                    <h4>Fashion Design</h4>
+                    <p>If you think that solving mathematical problems, mainly discrete mathematics, studying programming and programming languages, solving (real life) problems with systematic logical approaches and design and analyzing these solutions and programs is fun, so studying computer science will be fun.</p>
+                </div>
+                <div data-aos="zoom-in">
+                    <h4>Montessori</h4>
+                    <p>If you think that solving mathematical problems, mainly discrete mathematics, studying programming and programming languages, solving (real life) problems with systematic logical approaches and design and analyzing these solutions and programs is fun, so studying computer science will be fun.</p>
+                </div>
+                <div data-aos="zoom-in">
+                    <h4>Computer Sciences</h4>
+                    <p>If you think that solving mathematical problems, mainly discrete mathematics, studying programming and programming languages, solving (real life) problems with systematic logical approaches and design and analyzing these solutions and programs is fun, so studying computer science will be fun.</p>
+                </div>
+            </div>
+          </section>
+          <section class="pos-a" data-aos="fade-right" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+            <div class="cont">
+                <div>
+                    <span>
+                        <i class="fa fa-bullseye"></i>
+                    </span>
+                    <h3>Our mission</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus dolores magnam illo ut fugiat, facilis sint officia, aliquid doloremque quas </p>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa fa-eye"></i>
+                    </span>
+                    <h3>Our Vision</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus dolores magnam illo ut fugiat, facilis sint officia, aliquid doloremque quas </p>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa fa-bullseye"></i>
+                    </span>
+                    <h3>Our Goal</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus dolores magnam illo ut fugiat, facilis sint officia, aliquid doloremque quas </p>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa fa-eye"></i>
+                    </span>
+                    <h3>Our Value</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus dolores magnam illo ut fugiat, facilis sint officia, aliquid doloremque quas </p>
+                </div>
+            </div>
+          </section>
+          <section class="news" id="news">
+            <h2>Calendar & Blog</h2>
+            <div class="container_news">
+                <div class="events">
+                    <header>
+                        <h3>Our Calendar</h3>
+                        <button><a href="{% url 'events' %}">View All</a></button>
+                    </header>
+                    <div class="event-container">
+                        {% for calendar in calendars %}
+                            <div>
+                                <span>
+                                    <h3>{{calendar.date.day}}</h3>
+                                    <p>{{calendar.date|slugify|slice:"0:4"}}</p>
+                                </span>
+                                <div>
+                                    <h3>{{calendar.name}}</h3>
+                                    <p>{{calendar.date}}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+        
+                <div class="news_container">
+                    <header>
+                        <h3>From Our Blog</h3>
+                        <button><a href="{% url 'blog-feed' %}">View All</a></button>
+                    </header>
+                    <div class="blog">
+                        <div>
+                            <img src="https://media.istockphoto.com/photos/multiethnic-group-of-students-studying-outdoors-picture-id818087910?k=20&m=818087910&s=612x612&w=0&h=yFTDSCem-fhKsjWl_6Uiej2lol3XaBZrYqm_di8kRaM=" alt=""/>
+                        </div>
+                        <div>
+                            <span><a href="#">The Blog title</a></span>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+          </section>
+          <section id="contact">
+            <h3>Contact</h3>
+            <div class="box_contact">
+                <div class="contact-flex">
+                    <span>
+                        <i class="fa fa-map-marker"></i>
+                    </span>
+                    <div>
+                        <h3>Our Address</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, atque.</p>
+                    </div>
+                </div>
+                <div class="contact-flex">
+                    <span>
+                        <i class="fa fa-phone"></i>
+                    </span>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>08125244433</p><p>08185791242</p>
+                    </div>
+                </div>
+                <div class="contact-flex">
+                    <span>
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p><a href="">info@OptimalLead.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <h3>Find us on Social media</h3>
+            <div id="social_menu">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+          </div>
+          </section>
+        <footer>
+            <div>
+                <h2>OPTIMAL LEAD SCHOOLS</h2>
+                <h4>Admission is still open</h4>
+                <button><a href="{% url 'admission' %}">Enroll Now</a></button>
+            </div>
+            <div>
+                <h3>Quick links</h3>
+                <div>
+                    <li>> <a href="/#">Home</a></li>
+                    <li>> <a href="/#about">About</a></li>
+                    <li>> <a href="./services.html">Services</a></li>
+                    <li>> <a href="/#news">News & Events</a></li>
+                    <li>> <a href="/#contact">Contact</a></li>
+                </div>
+            </div>
+            <div>
+                <h2>Our Address</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi dolores sed!</p>
+                <div class="footer_social">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+              </div>
+            </div>
+        </footer>
+                
+          
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper',{
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
+    <script src="{% static 'js/index.js' %}">
+        
+    </script>
+    <script src="{% static 'js/toggle.js' %}">
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.title{
+    text-align: center;
+    padding: 1em;
+}
+.blog_container{
+    padding: 4em;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 30px;
+}
+.blog_container > div{
+    height: 100%;
+    width: 100%;
+}
+.blog_container > div img{
+    height: 400px;
+    width: 380px;
+    object-fit: cover;
+    border-radius: 1em;
+}

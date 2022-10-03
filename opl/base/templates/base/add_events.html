@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
+</head>
+<body>
+    <div class="pos_align_form">
+        {{error}}
+        <form method="POST" action="">
+            {% csrf_token %}
+            <label>Input Calendar name</label>
+            <input type="text" name="calendar-name" required/>
+            <label>Enter day</label>
+            <input type="date" name="calendar-date" required/>
+            <button type="submit" value="SubmitCalendar">SubmitCalendar</button>
+        </form>
+    </div>
+
+    <script src="{% static 'js/toggle.js' %}">
+    </script>
+</body>
+</html>

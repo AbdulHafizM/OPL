@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
+</head>
+<body>
+    {% for list in lists %}
+        <div class="admission">
+            <p>First Name : {{list.first_name}}</p>
+            <p>Last Name : {{list.last_name}}</p>
+            <p>Age : {{list.age}}</p>
+            <p>Class : {{list.student_class}}</p>
+            <p>Parent's Name : {{list.parent_name}}</p>
+            <p>Phone No : {{list.number}}</p>
+            <p>Address <Address>: {{list.address}}</Address></p>
+            <p>Date sent : {{list.created}}</p>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>

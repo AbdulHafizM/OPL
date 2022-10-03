@@ -1,0 +1,185 @@
+<section id="about" data-aos="fade-left"">
+    <h2>About Us</h2>
+    <div class="about-container">
+        <div>logo</div>
+        <div><h2>Welcome</h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis optio minima, quo reiciendis saepe aut voluptatum quas accusantium dolorum a similique placeat dolore id nostrum quidem inventore, voluptas dolorem ullam adipisci animi. Delectus quis nisi quasi expedita earum? Tempore sunt, odio aliquid voluptatum doloremque deserunt at hic? Odit exercitationem nobis nam rerum, illo non, nisi libero distinctio sapiente, minima sequi iure maiores ut tempora eos.</div>
+    </div>
+  </section>
+  <section id="services" class="services">
+    <h2>What we offer</h2>
+    <div class="services-container">
+        <div data-aos="zoom-in">
+            <h4>Computer Science</h4>
+            <p>If you think that solving mathematical problems, mainly discrete mathematics, studying programming and programming languages, solving (real life) problems with systematic logical approaches and design and analyzing these solutions and programs is fun, so studying computer science will be fun.</p>
+        </div>
+        <div data-aos="zoom-in">
+            <h4>Fashion Design</h4>
+            <p>If you think that solving mathematical problems, mainly discrete mathematics, studying programming and programming languages, solving (real life) problems with systematic logical approaches and design and analyzing these solutions and programs is fun, so studying computer science will be fun.</p>
+        </div>
+        <div data-aos="zoom-in">
+            <h4>Montessori</h4>
+            <p>If you think that solving mathematical problems, mainly discrete mathematics, studying programming and programming languages, solving (real life) problems with systematic logical approaches and design and analyzing these solutions and programs is fun, so studying computer science will be fun.</p>
+        </div>
+        <div data-aos="zoom-in">
+            <h4>Computer Sciences</h4>
+            <p>If you think that solving mathematical problems, mainly discrete mathematics, studying programming and programming languages, solving (real life) problems with systematic logical approaches and design and analyzing these solutions and programs is fun, so studying computer science will be fun.</p>
+        </div>
+    </div>
+  </section>
+  <section class="pos-a" data-aos="fade-right" data-aos-offset="300"
+  data-aos-easing="ease-in-sine">
+    <div class="cont">
+        <div>
+            <span>
+                <i class="fa fa-bullseye"></i>
+            </span>
+            <h3>Our mission</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus dolores magnam illo ut fugiat, facilis sint officia, aliquid doloremque quas architecto labore et culpa! Beatae, vitae nostrum?</p>
+        </div>
+        <div>
+            <span>
+                <i class="fa fa-eye"></i>
+            </span>
+            <h3>Our Vision</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus dolores magnam illo ut fugiat, facilis sint officia, aliquid doloremque quas architecto labore et culpa! Beatae, vitae nostrum?</p>
+        </div>
+        <div>
+            <span>
+                <i class="fa fa-bullseye"></i>
+            </span>
+            <h3>Our Goal</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus dolores magnam illo ut fugiat, facilis sint officia, aliquid doloremque quas architecto labore et culpa! Beatae, vitae nostrum?</p>
+        </div>
+        <div>
+            <span>
+                <i class="fa fa-eye"></i>
+            </span>
+            <h3>Our Value</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus dolores magnam illo ut fugiat, facilis sint officia, aliquid doloremque quas architecto labore et culpa! Beatae, vitae nostrum?</p>
+        </div>
+    </div>
+  </section>
+  <section class="news" id="news">
+    <h2>Calendar & Blog</h2>
+    <div class="container_news">
+        <div class="events">
+            <header>
+                <h3>Our Calendar</h3>
+                <button><a href="{% url 'events' %}">View All</a></button>
+            </header>
+            <div class="event-container">
+                {% for calendar in calendars %}
+                    <div>
+                        <span>
+                            <h3>{{calendar.date.day}}</h3>
+                            <p>{{calendar.date|slugify|slice:"0:4"}}</p>
+                        </span>
+                        <div>
+                            <h3>{{calendar.name}}</h3>
+                            <p>{{calendar.date}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="news_container">
+            <header>
+                <h3>From Our Blog</h3>
+                <button><a href="{% url 'blog-feed' %}">View All</a></button>
+            </header>
+            <div class="blog">
+                <div>
+                    <img src="https://media.istockphoto.com/photos/multiethnic-group-of-students-studying-outdoors-picture-id818087910?k=20&m=818087910&s=612x612&w=0&h=yFTDSCem-fhKsjWl_6Uiej2lol3XaBZrYqm_di8kRaM=" alt=""/>
+                </div>
+                <div>
+                    <span><a href="#">The Blog title</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </section>
+  <section id="contact">
+    <h3>Contact</h3>
+    <div class="box_contact">
+        <div class="contact-flex">
+            <span>
+                <i class="fa fa-map-marker"></i>
+            </span>
+            <div>
+                <h3>Our Address</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, atque.</p>
+            </div>
+        </div>
+        <div class="contact-flex">
+            <span>
+                <i class="fa fa-phone"></i>
+            </span>
+            <div>
+                <h3>Call Us</h3>
+                <p>08125244433</p><p>08185791242</p>
+            </div>
+        </div>
+        <div class="contact-flex">
+            <span>
+                <i class="fa fa-envelope"></i>
+            </span>
+            <div>
+                <h3>Email Us</h3>
+                <p><a href=""></a></p>
+            </div>
+        </div>
+    </div>
+    <h3>Find us on Social media</h3>
+    <div id="social_menu">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+  </div>
+  </section>
+<footer>
+    <div>
+        <h2>OPTIMAL LEAD SCHOOLS</h2>
+        <h4>Admission is still open</h4>
+        <button><a href="{% url 'admission' %}">Enroll Now</a></button>
+    </div>
+    <div>
+        <h3>Quick links</h3>
+        <div>
+            <li>> <a href="/#">Home</a></li>
+            <li>> <a href="/#about">About</a></li>
+            <li>> <a href="./services.html">Services</a></li>
+            <li>> <a href="/#news">News & Events</a></li>
+            <li>> <a href="/#contact">Contact</a></li>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<span>
+    <span>
+        <i class="fa fa-envelope"></i>
+        <span>info@school.com</span>
+        <i class="fa fa-phone"></i>
+        <span>+2348125244433</span>
+        <span>+2348125244433</span>
+    </span>
+    <span>
+        Mon-Fri 8am - 4pm
+    </span>
+</span>
